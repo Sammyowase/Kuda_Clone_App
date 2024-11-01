@@ -59,7 +59,7 @@ const Header = () => {
                     </SideNav>
                 </Buttons>
             </Container>
-            {toggle && <Sidebar toggle={toggle} setToggle={setToggle} />}
+            {toggle === false ? null : <Sidebar toggle={toggle} setToggle={setToggle} />}
         </>
     );
 };
